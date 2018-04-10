@@ -1,0 +1,4 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='wel-container'>
+  <text class='wel-text'>welcome</text>
+</view>

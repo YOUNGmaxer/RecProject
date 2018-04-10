@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<import src="shop-item/shop-item-template.wxml" />
+<import src='search-tag/search-tag-template.wxml' />
+
+<!-- 搜索框 -->
+<view class='search'>
+  <view class='search-inner'>
+    <icon class='search-img' type='search' size='13'></icon>
+    <input class='search-box' placeholder='请输入品类' confirm-type='search' bindfocus='onBindFocus' bindconfirm='onBindConfirm' value='{{inputValue}}' />
+    <icon wx:if='{{searchPanelShow}}' class='cancel-img' type='clear' size='13' bindtap='onCancel'></icon>
+  </view>
+</view>
+
+<!-- 分割线 -->
+<view class='division'></view>
+
+<view wx:if='{{infoPanelShow}}' class='info-panel'>
+  <!-- 内容项 -->
+  <block wx:for="{{recList}}" wx:for-item="item">
+    <view catch:tap='onShopTap' data-item-id="{{item.itemId}}" data-tags='{{item.tags}}'>
+      <template is="shopItem" data="{{...item}}" />
+    </view>
+  </block>
+
+  <view class='bottom-border'></view>
+</view>
+
+<!-- 搜索页面 -->
+<view wx:if='{{searchPanelShow}}' class='search-panel'>
+  <template is='search-tag-template' data='{{searchTags}}' />
+</view>

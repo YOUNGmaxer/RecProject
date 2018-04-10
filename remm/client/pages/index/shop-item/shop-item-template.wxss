@@ -1,0 +1,39 @@
+@import "../stars/stars-template.wxss";
+
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ededed;
+  /* border-bottom: 1px solid #ededed; */
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.shop-img {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 20rpx;
+  border: 0.5px solid #ededed;
+}
+
+.shop-info {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-info .shop-name {
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-top: 5rpx;
+  margin-bottom: 12rpx;
+}
+
+.shop-info .shop-addr {
+  font-size: 24rpx;
+  margin-top: 12rpx;
+}
+
+.shop-info .shop-star {
+  margin-left: 5rpx;
+}

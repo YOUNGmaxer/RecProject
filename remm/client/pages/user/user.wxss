@@ -1,0 +1,28 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #f6f6f6;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-left: none;
+  border-right: none;
+  margin-top: 40rpx;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  color: #666;
+}

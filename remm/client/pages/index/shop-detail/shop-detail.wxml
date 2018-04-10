@@ -1,0 +1,64 @@
+<!--pages/index/shop-detail/shop-detail.wxml-->
+<import src="../stars/stars-template.wxml" />
+<import src='../feature-tag/feature-tag.wxml' />
+
+<view class='container'>
+  <view class='poster-panel'>
+    <image class='head-poster' mode='aspectFill' src='{{itemInfo.imageUrl}}'></image>
+  </view>
+
+
+  <view class='shop-info'>
+    <image class='bookmark' src='/images/icon/mark.png'></image>
+
+    <text class='shop-name'>{{itemInfo.itemName}}</text>
+
+    <view class='shop-detail-star'>
+      <image class='rating' src='/images/icon/rating.png'></image>
+      <view class='shop-stars'>
+        <template is="stars-template" data='{{stars:itemInfo.stars, score:itemInfo.score}}' />
+      </view>
+    </view>
+
+    <view class='shop-addr' catchtap='onLocateShop'>
+      <image class='addr-icon' src='/images/icon/locate.png'></image>
+      <text class='addr-text'>{{itemInfo.address}}</text>
+    </view>
+
+    <view class='shop-call' catchtap='onCallShop'>
+      <image class='call-icon' src='/images/icon/call.png'></image>
+      <text class='call-number'>{{itemInfo.phone}}</text>
+    </view>
+
+
+
+  </view>
+
+  <!-- 分界线 -->
+  <view class='division'></view>
+
+  <!-- 推荐理由 -->
+  <view class='remm-box'>
+    <text class='remm-reason-const'>推荐理由</text>
+    <!-- 用标签块来表示推荐理由 -->
+    <view class='reason-tags'>
+      <block wx:for='{{itemInfo.tags}}'>
+        <template is='feature-tag' data='{{item}}' />
+      </block>
+    </view>
+
+    <view class='remm-sentence'>
+      <block wx:for='{{itemInfo.tags}}'>
+      <view class='rs-box'>
+        <text class='rs-text'>你可能对 [{{item}}] 跟兴趣，这家店在这点做得不错。</text>
+      </view>
+      </block>
+    </view>
+
+  </view>
+</view>
+
+<!-- TODO 弹出层 -->
+<!-- <view class='phone-modal'>
+  
+</view> -->

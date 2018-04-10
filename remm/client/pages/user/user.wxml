@@ -1,0 +1,9 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <view class='userinfo'>
+    <!-- 利用条件渲染和数据绑定来实现头像的变化 -->
+    <image class='userinfo-avatar' src="{{logged ? userInfo.avatarUrl : '/images/icon/user-unlogin.png'}}"></image>
+    <text class='userinfo-nickname'>{{logged ? userInfo.nickName : unloginName}}</text>
+  </view>
+
+</view>

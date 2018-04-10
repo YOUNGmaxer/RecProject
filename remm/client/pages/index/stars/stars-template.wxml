@@ -1,0 +1,11 @@
+<!--pages/index/stars/stars-template.wxml-->
+<template name="stars-template">
+  <view class='stars-container'>
+    <view class='stars'>
+      <block wx:for='{{stars}}'>
+        <image src="{{item ? '/images/icon/star.png' : '/images/icon/none-star.png'}}"></image>
+      </block>
+    </view>
+    <text class='star-score'>{{score}}</text>
+  </view>
+</template>

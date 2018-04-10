@@ -1,0 +1,25 @@
+/* pages/index/stars/stars-template.wxss */
+.stars-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: -4rpx;
+  margin-top: 4rpx;
+  margin-bottom: 4rpx;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  margin-right: 24rpx;
+  margin-top: 8rpx;
+}
+
+.stars image {
+  padding-left: 4rpx;
+  width: 18rpx;
+  height: 18rpx;
+}
+
+.star-score {
+  vertical-align: middle;
+}

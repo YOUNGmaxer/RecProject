@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/search-page/search-page",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/shop-detail/shop-detail",
+    "pages/user/user",
+    "pages/favor/favor"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": " ",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "/images/tab/remm.png",
+        "selectedIconPath": "/images/tab/selected_remm.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "/images/tab/people.png",
+        "selectedIconPath": "/images/tab/people_fill.png"
+      }
+    ]
+  }
+}

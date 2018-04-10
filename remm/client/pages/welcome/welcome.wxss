@@ -1,0 +1,16 @@
+/* pages/welcome/welcome.wxss */
+page {
+  height: 100%;
+}
+
+.wel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wel-text {
+  margin-top: 400rpx;
+  text-align: center;
+  font-size: 40rpx;
+}

@@ -1,0 +1,14 @@
+.tag-container {
+  margin: 12rpx;
+  border-radius: 50rpx;
+  background-color: #ffc0cb;
+  display: flex;
+  align-items: center;
+  padding: 14rpx 26rpx;
+  /* border: 0.1px solid #ff1493; */
+}
+
+.tag-text {
+  font-size: 27rpx;
+  color: #a0522d;
+}

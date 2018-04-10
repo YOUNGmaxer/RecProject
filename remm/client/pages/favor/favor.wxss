@@ -1,0 +1,43 @@
+/* pages/favor/favor.wxss */
+
+.favor-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 600rpx; */
+
+}
+
+.favor-title {
+  font-size: 50rpx;
+  margin: 30rpx auto;
+}
+
+.favor-tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50rpx 70rpx;
+  justify-content: space-around;
+}
+
+.favor-tag {
+  background-color: #ededed;
+  height: 80rpx;
+  width: 200rpx;
+  padding: 0 10rpx;
+  border-radius: 8rpx;
+  margin:15rpx;
+}
+
+.tag-info {
+  margin: 0 10rpx;
+  color: black;
+  vertical-align: middle;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+
+.next-step {
+  width: 480rpx;
+  margin-top: 100rpx;
+}

@@ -1,0 +1,14 @@
+<import src='../stars/stars-template.wxml' />
+
+<template name="shopItem">
+  <view class='shop-container'>
+    <image class='shop-img' src='{{imageUrl}}'></image>
+    <view class='shop-info'>
+      <text class='shop-name'>{{itemName}}</text>
+      <view class='shop-star'>
+        <template is='stars-template' data='{{stars:stars, score:score}}' />
+      </view>
+      <text class='shop-addr'>{{address}}</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<import src="../shop-item/shop-item-template.wxml" />
+
+<view class='info-panel'>
+  <!-- 内容项 -->
+  <block wx:for="{{newRecList}}" wx:for-item="item">
+    <view catch:tap='onShopTap' data-item-id="{{item.itemId}}" data-tags='{{item.tags}}'>
+      <template is="shopItem" data="{{...item}}" />
+    </view>
+  </block>
+
+  <view class='bottom-border'></view>
+</view>

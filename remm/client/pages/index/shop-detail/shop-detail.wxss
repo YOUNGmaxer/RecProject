@@ -1,0 +1,154 @@
+/* pages/index/shop-detail/shop-detail.wxss */
+@import "../stars/stars-template.wxss";
+@import "../feature-tag/feature-tag.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.poster-panel {
+  width: 100%;
+  height: 480rpx;
+  overflow: hidden;
+}
+
+.head-poster {
+  width: 100%;
+  /* height: 600rpx; *//* height: 460rpx; */
+}
+
+.bookmark {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  top: -15rpx;
+}
+
+.shop-info {
+  padding: 30rpx;
+  position: relative;
+}
+
+.shop-name {
+  font-size: 48rpx;
+  font-weight: 600;
+}
+
+.shop-detail-star {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+}
+
+.rating {
+  width: 34rpx;
+  height: 34rpx;
+  margin: auto 0;
+  margin-left: 4rpx;
+  margin-right: 17rpx;
+  vertical-align: middle;
+}
+
+.shop-stars {
+  /* margin: auto 0; */
+  margin-top: -4rpx;
+}
+
+.stars image {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.star-score {
+  padding-top: 9rpx;
+  line-height: 24rpx;
+  font-size: 28rpx;
+}
+
+.shop-addr {
+  /* border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  /* vertical-align: middle; */
+}
+
+.addr-icon {
+  width: 34rpx;
+  height: 34rpx;
+  margin: auto 0;
+  margin-left: 4rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+
+.addr-text {
+  margin: auto 0;
+  font-size: 26rpx;
+  vertical-align: middle;
+}
+
+.shop-call {
+  margin-top: 25rpx;
+}
+
+.call-icon {
+  width: 33rpx;
+  height: 33rpx;
+  margin-left: 5rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+
+.call-number {
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+
+.division {
+  width: 100%;
+  height: 15rpx;
+  background-color: #ededed;
+}
+
+.remm-box {
+  margin: 20rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70rpx;
+}
+
+.remm-reason-const {
+  font-size: 36rpx;
+  margin-bottom: 30rpx;
+  font-weight: 600;
+}
+
+.reason-tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.remm-sentence {
+  display: flex;
+  flex-direction: column;
+}
+
+.rs-box {
+  margin: 12rpx;
+  background-color: #ffe7ba;
+  border-radius: 50rpx;
+  display: flex; 
+  align-items: center;
+  padding: 16rpx 22rpx;
+}
+
+.rs-text {
+  font-size: 25rpx;
+  color: #cd1076;
+}

@@ -1,0 +1,5 @@
+<template name='feature-tag'>
+  <view class='tag-container'>
+    <text class='tag-text'>{{item}}</text>
+  </view>
+</template>

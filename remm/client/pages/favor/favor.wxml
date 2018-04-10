@@ -1,0 +1,18 @@
+<!--pages/favor/favor.wxml-->
+<view class='favor-container'>
+  <text class='favor-title'>选择你感兴趣的品类</text>
+
+  <checkbox-group class='favor-tag-container' bindchange='onCheckBoxChange'>
+    <block wx:for="{{items}}" wx:for-item='item'>
+      <label>
+
+        <view class='favor-tag' bindtap='onCheckedChange' data-name='{{item.value}}'>
+          <checkbox class='tag-box' value='{{item.value}}' checked='{{item.checked}}' />
+          <text class='tag-info'>{{item.name}}</text>
+        </view>
+      </label>
+    </block>
+  </checkbox-group>
+
+  <button class='next-step' bindtap='onNextStep'>下一步</button>
+</view>
