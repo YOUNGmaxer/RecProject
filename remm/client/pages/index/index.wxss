@@ -5,7 +5,8 @@
 .search {
   display: flex;
   flex-direction: row;
-  margin: 20rpx 0;
+  padding: 20rpx 0;
+  background-color: #8470ff;
 }
 
 .search-inner {
@@ -38,7 +39,7 @@
 .division {
   background-color: #ededef;
   height: 10rpx;
-  margin: 30rpx 0;
+  margin-bottom: 30rpx;
 }
 
 .bottom-border {

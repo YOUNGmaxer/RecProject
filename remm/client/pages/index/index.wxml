@@ -22,7 +22,7 @@
     </view>
   </block>
 
-  <view class='bottom-border'></view>
+  <!-- <view class='bottom-border'></view> -->
 </view>
 
 <!-- 搜索页面 -->
